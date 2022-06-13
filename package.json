@@ -24,6 +24,14 @@
         "sass-loader": "^11.0.1"
     },
     "dependencies": {
+        "flag-icon-css": "^4.1.7",
+        "i18next": "^21.8.9",
+        "i18next-browser-languagedetector": "^6.1.4",
+        "i18next-http-backend": "^1.4.1",
+        "js-cookie": "^3.0.1",
+        "react-bootstrap": "^2.4.0",
+        "react-i18next": "^11.17.1",
+        "react-icons": "^4.4.0",
         "react-router-dom": "^6.3.0"
     }
 }
