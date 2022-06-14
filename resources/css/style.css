@@ -1,0 +1,23 @@
+.AppNavbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    background-color: #000;
+    color: #fff !important;
+    width: auto;
+    height: 50px;
+    padding: 0px 100px;
+}
+
+.AppNavbar a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.AppNavbar button {
+    color: #fff !important;
+}
+.dropdown-menu a{
+    color: #000 !important;
+}

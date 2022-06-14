@@ -46,32 +46,35 @@ function App() {
 
   return (
     <div className="App">
-     <div>
-        <Link to='/'>{ t('home') }</Link>
-     </div>
-     <div>
-        <Link to='/test'> Click Me</Link>
-     </div>
+     
+     <div className='AppNavbar'>
+          <div>
+              <Link to='/'>{ t('home') }</Link>
+          </div>
+          <div>
+              <Link to='/test'> Click Me</Link>
+          </div>
 
-     <DropdownButton
-        variant="link"
-        title={<BsGlobe/>}
-        id="input-group-dropdown-1"
-      >
-        <Dropdown.Item>
-        <span>{t('language')}</span>
-        </Dropdown.Item>
-        {
-          languages.map(({code, name, country_code})=>(
-            <Dropdown.Item key={country_code} 
-            onClick={() => i18next.changeLanguage(code)}
-              disabled={code === currentLanguageCode}
+          <DropdownButton
+              variant="link"
+              title={<BsGlobe/>}
+              id="input-group-dropdown-1"
             >
-              <span className={`flag-icon flag-icon-${country_code} mx-2`}></span>
-              {name}</Dropdown.Item>
-          ))
-        }
-      </DropdownButton>
+              <Dropdown.Item>
+              <span>{t('language')}</span>
+              </Dropdown.Item>
+              {
+                languages.map(({code, name, country_code})=>(
+                  <Dropdown.Item key={country_code} 
+                  onClick={() => i18next.changeLanguage(code)}
+                    disabled={code === currentLanguageCode}
+                  >
+                    <span className={`flag-icon flag-icon-${country_code} mx-2`}></span>
+                    {name}</Dropdown.Item>
+                ))
+              }
+            </DropdownButton>
+     </div>
 
       <Routes>
         <Route path='/' element={<Home />}  />
