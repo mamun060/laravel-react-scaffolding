@@ -10,6 +10,7 @@ Follow Up these below steps:
 
 2. Install react ui in your laravel
 ```php 
+    composer require laravel/ui
     php artisan ui react
 ```
 
